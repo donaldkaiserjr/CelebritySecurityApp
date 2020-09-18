@@ -20,7 +20,7 @@ class Security(Offender):
     off_d_license, date, officer_fname, officer_lname, officer_id, company, celebrity, incident_type, 
     incident_location, incident_city, incident_state, police_disp):
         
-        Offender.__init__(self, offender_fname, offender_lname, off_sex, off_age, off_d_license, date)
+        super().__init__(offender_fname, offender_lname, off_sex, off_age, off_d_license, date)
         self.officer_fname = officer_fname
         self.officer_lname = officer_lname
         self.officer_id = officer_id
